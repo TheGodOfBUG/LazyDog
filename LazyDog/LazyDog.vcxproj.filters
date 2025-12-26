@@ -27,9 +27,15 @@
     <ClInclude Include="src\LazyDog\EntryPoint.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\LazyDog\Log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\LazyDog\Application.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LazyDog\Log.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

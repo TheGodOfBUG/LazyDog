@@ -1,0 +1,3 @@
+[submodule "LazyDog/vendor/spdlog"]
+	path = LazyDog/vendor/spdlog
+	url = git@github.com:TheGodOfBUG/spdlog.git
