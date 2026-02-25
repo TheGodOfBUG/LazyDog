@@ -7,6 +7,11 @@
 #include "LazyDog/Events/ApplicationEvent.h"
 #include "Events/Event.h"
 
+//TEMP
+#include "Renderer/Shader.h"
+#include "Renderer/Buffer.h"
+#include "Renderer/VertexArray.h"
+
 namespace LazyDog {
 	
 	class LazyDog_API Application
@@ -35,7 +40,12 @@ namespace LazyDog {
 		ImGuiLayer* m_ImGuiLayer;
 
 		//TEMP
-		unsigned int m_VertexArray, m_VertexBuffer, m_IndexBuffer;
+		std::shared_ptr<Shader> m_Shader;
+		std::shared_ptr<VertexArray> m_VertexArray;
+
+		std::shared_ptr<Shader> m_BlueShader;
+		std::shared_ptr<VertexArray> m_SquareVA;
+
 	private:
 		static Application* s_Instance;
 	};

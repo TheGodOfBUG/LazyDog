@@ -71,6 +71,17 @@
       <Filter>Platform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="src\ldpch.h" />
+    <ClInclude Include="src\LazyDog\Renderer\GraphicsContext.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
+    <ClInclude Include="src\LazyDog\Renderer\Shader.h" />
+    <ClInclude Include="src\LazyDog\Renderer\Buffer.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
+    <ClInclude Include="src\LazyDog\Renderer\Renderer.h" />
+    <ClInclude Include="src\LazyDog\Renderer\VertexArray.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h" />
+    <ClInclude Include="src\LazyDog\Renderer\RendererAPI.h" />
+    <ClInclude Include="src\LazyDog\Renderer\RenderCommand.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\LazyDog\Application.cpp">
@@ -98,5 +109,15 @@
       <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\ldpch.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
+    <ClCompile Include="src\LazyDog\Renderer\Shader.cpp" />
+    <ClCompile Include="src\LazyDog\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
+    <ClCompile Include="src\LazyDog\Renderer\Renderer.cpp" />
+    <ClCompile Include="src\LazyDog\Renderer\VertexArray.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp" />
+    <ClCompile Include="src\LazyDog\Renderer\RendererAPI.cpp" />
+    <ClCompile Include="src\LazyDog\Renderer\RenderCommand.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp" />
   </ItemGroup>
 </Project>
