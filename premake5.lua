@@ -17,6 +17,7 @@ IncludeDir["GLFW"] = "LazyDog/vendor/GLFW/include"
 IncludeDir["GLAD"] = "LazyDog/vendor/GLAD/include"
 IncludeDir["ImGui"] = "LazyDog/vendor/imgui"
 IncludeDir["glm"] = "LazyDog/vendor/glm"
+IncludeDir["stb_image"] = "LazyDog/vendor/stb_image"
 
 include "LazyDog/vendor/GLFW"
 include "LazyDog/vendor/GLAD"
@@ -38,7 +39,11 @@ project "LazyDog"
     files 
     {
         "%{prj.name}/src/**.h",
-        "%{prj.name}/src/**.cpp"
+        "%{prj.name}/src/**.cpp",
+        "%{prj.name}/vendor/stb_image/**.h",
+        "%{prj.name}/vendor/stb_image/**.cpp",
+        "%{prj.name}/vendor/glm/glm/**.hpp",
+        "%{prj.name}/vendor/glm/glm/**.inl",
     }
 
     defines
@@ -54,7 +59,8 @@ project "LazyDog"
         "%{IncludeDir.GLFW}",
         "%{IncludeDir.GLAD}",
         "%{IncludeDir.ImGui}",
-        "%{IncludeDir.glm}"
+        "%{IncludeDir.glm}",
+        "%{IncludeDir.stb_image}"
     }
 
     links
@@ -122,6 +128,7 @@ project "Sandbox"
     {
         "LazyDog/vendor/spdlog/include",
         "%{IncludeDir.glm}",
+        "%{IncludeDir.ImGui}",
         "LazyDog/src"
     }
 
